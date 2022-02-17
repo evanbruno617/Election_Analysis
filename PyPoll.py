@@ -1,7 +1,6 @@
-# Add dependencies
-import csv
-from operator import countOf
 
+#Add dependencies
+import csv
 import os
 
 #Assign a variable to load file from a path
@@ -53,7 +52,7 @@ with open(file_to_load) as election_data:
         #checks to see if the candidate has come up before if not adds to dictionary
         if candidate_name not in candidate_options:
             candidate_options.append(candidate_name)
-            #sets value of candidate ti 0
+            #sets value of candidate to 0
             candidate_votes[candidate_name] = 0
         #adds a vote to the candidate
         candidate_votes[candidate_name] += 1
